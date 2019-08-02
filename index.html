@@ -13,7 +13,22 @@
         }
 
         img {
-            max-width: 90%;
+            width: 70%;
+            user-drag: none; 
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-drag: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+        ::selection { 
+            background: transparent;
+        }
+        @media screen and (max-width: 1290px) {
+            img {
+                width: auto;
+                max-width: 90%;
+            }
         }
     </style>
 </head>
